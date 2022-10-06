@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class DisplayController : MonoBehaviour
 {
-    private Text displayText;
+    [SerializeField]
+    private TMPro.TMP_Text displayText;
     public Calculator calculator;
 
     void Start()
     {
-        displayText = 
-    GameObject.Find("DisplayPanel").GetComponent<Text>();
+        displayText =  GetComponentInChildren<TMPro.TMP_Text>();
     }
     public void ClearDisplay()
     {
@@ -19,9 +19,10 @@ public class DisplayController : MonoBehaviour
     }
     public void UpdateDisplayText(string newText)
     {
+        Debug.Log("appending..." + newText);
         if(displayText == null)
         {
-            GameObject.Find("DisplayPanel").GetComponent<Text>();
+            GameObject.Find("DisplayPanel").GetComponent<TMPro.TMP_Text>();
         }
         displayText.text += newText;
     }
