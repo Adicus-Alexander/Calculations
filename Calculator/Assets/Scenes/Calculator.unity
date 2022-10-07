@@ -2795,7 +2795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6052866370600028713, guid: 259e92dd22331414c8aea78ba7cc5460, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: TitleScreen
+      value: MainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 7235565932564022225, guid: 259e92dd22331414c8aea78ba7cc5460, type: 3}
       propertyPath: m_Text
